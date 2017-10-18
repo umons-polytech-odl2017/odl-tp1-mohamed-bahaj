@@ -1,17 +1,15 @@
 package exercise1;
 
 class Person {
-	String name;
-	int age;
+	private String name;
+	private int age;
+	private static int nbreInstances=0;
 
-	public Person(String n, int a){
-		this.name=n;
-		this.age=a;
-	}
-
-	public Person(){
-		this.name=null;
-		this.age=0;
+	public Person(String name, int age){
+		System.out.println("création d'une nouvelle personne");
+		this.name= name;
+		this.age= age;
+		nbreInstances++;
 	}
 
 	public String getName(){
@@ -20,6 +18,10 @@ class Person {
 
 	public int getAge(){
 		return this.age;
+	}
+
+	public static int getNbreInstances(){
+		return nbreInstances;
 	}
 
 }

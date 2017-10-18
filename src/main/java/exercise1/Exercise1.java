@@ -13,9 +13,8 @@ public class Exercise1 {
 		// et un second donnant l'âge (nombre entier), créez un objet Person sur base de ceux-ci.
 		// Ecrivez ensuite le nom et l'âge de cette personne sur la sortie standard.
 
-		String name = args[0];
-		int age = Integer.parseInt(args[1]);
-		Person m = new Person (name, age);
-		System.out.println("person:" + m.getName() + " , age:" + m.getAge());
+
+		Person m = new Person ("Mohamed", 21);
+		System.out.println("person: " + m.getName() + " , age:" + m.getAge());
 	}
 }
