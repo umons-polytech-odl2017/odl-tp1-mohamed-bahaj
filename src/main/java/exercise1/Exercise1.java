@@ -15,6 +15,13 @@ public class Exercise1 {
 
 
 		Person m = new Person ("Mohamed", 21);
+		Person n = new Person ("Mohamed", 22);
+		Person o = new Person ("Mohamed", 23);
+		Person p = new Person ("Mohamed", 24);
+
 		System.out.println("person: " + m.getName() + " , age:" + m.getAge());
+		System.out.println("La taille de la population est "+Person.computePopulationSize());
+		System.out.println("La moyenne d'âge de la population est "+Person.computeAveragePopulationAge());
+
 	}
 }
