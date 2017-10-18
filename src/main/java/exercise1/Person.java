@@ -30,4 +30,9 @@ class Person {
 		return Person.average/Person.nbreInstances;
 	}
 
+	static void resetPopulation() {
+		Person.nbreInstances=0;
+		Person.average=0;
+	}
+
 }

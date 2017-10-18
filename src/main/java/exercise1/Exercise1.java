@@ -22,6 +22,9 @@ public class Exercise1 {
 		System.out.println("person: " + m.getName() + " , age:" + m.getAge());
 		System.out.println("La taille de la population est "+Person.computePopulationSize());
 		System.out.println("La moyenne d'âge de la population est "+Person.computeAveragePopulationAge());
+		Person.resetPopulation();
+		System.out.println("La taille de la population est "+Person.computePopulationSize());
+		System.out.println("La moyenne d'âge de la population est "+Person.computeAveragePopulationAge());
 
 	}
 }
